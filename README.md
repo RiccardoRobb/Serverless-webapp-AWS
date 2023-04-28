@@ -38,4 +38,6 @@ All of your static web content will be managed by *AWS Amplify Console*. Your en
 
 5. **Setup AWS Amplify to automatically deploy all files hosted**
 
+---
+
 
