@@ -30,4 +30,12 @@ All of your static web content will be managed by *AWS Amplify Console*. Your en
    
    * commit the files to your Git service
 
-4. 
+4. **Enable web hosting with AWS Amplify Console**
+   
+   * create a *New App* and choose *Host web app*
+   
+   * select the repository service provide and commit code
+
+5. **Setup AWS Amplify to automatically deploy all files hosted**
+
+
