@@ -70,7 +70,7 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    >     api: {
    >         invokeUrl: '' // e.g. https://rc7nyt4tql.execute-api.us-east-1.amazonaws.com/prod',
    >     }
-   > };```
+   > };
    > ```
    
    
