@@ -60,7 +60,7 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    
    Modify the `/js/config.js` file with the setting from user pool and app you created in the previous steps and *upload the file back to your bucket*.
    
-   > ```json
+   > ```
    > window._config = {
    >     cognito: {
    >         userPoolId: 'us-east-1_8eFiOt3Is',
