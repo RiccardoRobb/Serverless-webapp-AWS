@@ -101,7 +101,9 @@ Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests
 
 5. **Setup role name**
    
-   ### This will give an ERRROR!
+   
+   
+   ### This will give an ERROR!
    
    #### It is not possible to create a role using AWS Learner Lab
    
