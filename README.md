@@ -97,12 +97,16 @@ Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests
    
    * create a *service* role with *Lambda user case*
    
-   * check the box for te role *AWSLambdaBasiceExecutionRole*
+   * check the box for the role *AWSLambdaBasiceExecutionRole*
 
 5. **Setup role name**
 
-## This will give an ERROR!
+--- 
 
-#### It is not possible to create a role using AWS Learner Lab
+#### [ERROR] It is not possible to create or modify a role using AWS Learner Lab
+
+> I tried to modify the existing **LambdaSLRRole** that use the **createservicerole** service
+
+---
 
 
