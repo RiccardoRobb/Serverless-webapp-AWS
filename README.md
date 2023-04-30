@@ -100,13 +100,9 @@ Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests
    * check the box for te role *AWSLambdaBasiceExecutionRole*
 
 5. **Setup role name**
-   
-   
-   
-   ### This will give an ERROR!
-   
-   #### It is not possible to create a role using AWS Learner Lab
-   
-   
+
+## This will give an ERROR!
+
+#### It is not possible to create a role using AWS Learner Lab
 
 
