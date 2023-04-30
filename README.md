@@ -72,5 +72,39 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    >     }
    > };
    > ```
+
+5. **Push changes into your Git repo**
+
+6. **Validate your implementation**, [Module 2: User Management](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-2/)
+
+---
+
+## Serverless service backend
+
+Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests for your web application.
+
+1. **Create a DynamoDB table**
+
+2. **Setup table name and partition key**
+
+3. **Get the ARN**, from *Overview* - *Additional info*
+   
+   `arn:aws:dynamodb:us-east-1:684780178925:table/Users`
+
+4. **Create an IAM role for the Lambda function**
+   
+   * go to *IAM service*
+   
+   * create a *service* role with *Lambda user case*
+   
+   * check the box for te role *AWSLambdaBasiceExecutionRole*
+
+5. **Setup role name**
+   
+   ### This will give an ERRROR!
+   
+   #### It is not possible to create a role using AWS Learner Lab
    
    
+
+
