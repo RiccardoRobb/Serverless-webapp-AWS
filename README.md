@@ -2,8 +2,6 @@
 
 Refer to [Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, AWS Amplify, Amazon DynamoDB, and Amazon Cognito](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/?nc1=h_ls)
 
-
-
 <img src="./images/Architecture.png" title="" alt="Architecture" data-align="center">
 
 ## Static web Hosting with Continuous deployment
@@ -40,4 +38,37 @@ All of your static web content will be managed by *AWS Amplify Console*. Your en
 
 ---
 
+## User management
 
+You'll deploy pages that enable customers to register as a new user, verify their email address and sign into the site, using *Amazon Cognito*.
+
+1. **Create Cognito user pool**, configure *sign-in experience*
+
+2. **Configure security requirements / sign-up experience / message delivery**
+
+3. **Take note of PoolID, AppClient ID and Pool details**
+
+| Pool name | PoolID              |
+|:---------:|:-------------------:|
+| Users     | us-east-1_8eFiOt3Is |
+
+| App name   | AppClient ID               |
+| ---------- | -------------------------- |
+| magic_note | 24s1cskeupgk8af9ak5nn71vjj |
+
+4. **Update website config**
+   
+   Modify the `/js/config.js` file with the setting from user pool and app you created in the previous steps and *upload the file back to your bucket*.
+   
+   > `window._config = {
+   >     cognito: {
+   >         userPoolId: 'us-east-1_8eFiOt3Is',
+   >         userPoolClientId: '24s1cskeupgk8af9ak5nn71vjj',
+   >         region: 'us-east-1'
+   >     },
+   >     api: {
+   >         invokeUrl: '' // e.g. https://rc7nyt4tql.execute-api.us-east-1.amazonaws.com/prod',
+   >     }
+   > };`
+   
+   
