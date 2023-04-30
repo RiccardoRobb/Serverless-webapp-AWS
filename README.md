@@ -61,15 +61,23 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    Modify the `/js/config.js` file with the setting from user pool and app you created in the previous steps and *upload the file back to your bucket*.
    
    > `window._config = {`
+   > 
    > `   cognito: {`
+   > 
    > `        userPoolId: 'us-east-1_8eFiOt3Is',`
+   > 
    > `        userPoolClientId: '24s1cskeupgk8af9ak5nn71vjj',`
+   > 
    > `        region: 'us-east-1'`
+   > 
    > `    },`
    > 
    > `    api: {`
+   > 
    > `        invokeUrl: '' // e.g. https://rc7nyt4tql.execute-api.us-east-1.amazonaws.com/prod',`
+   > 
    > `    }`
+   > 
    > `};`
    
    
