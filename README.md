@@ -63,8 +63,8 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    > ```
    > window._config = {
    >     cognito: {
-   >         userPoolId: 'us-east-1_8eFiOt3Is',
-   >         userPoolClientId: '24s1cskeupgk8af9ak5nn71vjj',
+   >         userPoolId: 'us-east-1_44tntWOVE',
+   >         userPoolClientId: '1mn8agsd9pdgr27t5damb62bhr',
    >         region: 'us-east-1'
    >     },
    >     api: {
