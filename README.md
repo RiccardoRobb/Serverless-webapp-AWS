@@ -52,9 +52,9 @@ You'll deploy pages that enable customers to register as a new user, verify thei
 |:---------:|:-------------------:|
 | Users     | us-east-1_44tntWOVE |
 
-| App name   | AppClient ID               |
-| ---------- | -------------------------- |
-| User | 1mn8agsd9pdgr27t5damb62bhr |
+| App name | AppClient ID               |
+| -------- | -------------------------- |
+| User     | 1mn8agsd9pdgr27t5damb62bhr |
 
 4. **Update website config**
    
@@ -89,24 +89,26 @@ Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests
 
 3. **Get the ARN**, from *Overview* - *Additional info*
    
-   `arn:aws:dynamodb:us-east-1:684780178925:table/Users`
+   `arn:aws:dynamodb:us-east-1:121119844086:table/Users`
 
 4. **Create an IAM role for the Lambda function**
    
    * go to *IAM service*
    
-   * create a *service* role with *Lambda user case*
+   * create a *service* role with *Lambda use case* (under "Trusted entity type)
    
    * check the box for the role *AWSLambdaBasiceExecutionRole*
 
 5. **Setup role name**
 
----
+6. **Add the *Create inline policy* permission for DynamoDB**
 
-#### [ERROR] It is not possible to create or modify a role using AWS Learner Lab
+7. **Operation -> PutItem for ARN of the created table**
 
-> I tried to modify the existing **LambdaSLRRole** that use the **createservicerole** service
-
----
-
-
+8. **Create a Lambda function**
+   
+   * default Author from scratch
+   
+   * using RequestUnicors as name for *Node.js 16.x*
+   
+   * 
