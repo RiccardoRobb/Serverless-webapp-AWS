@@ -50,11 +50,11 @@ You'll deploy pages that enable customers to register as a new user, verify thei
 
 | Pool name | PoolID              |
 |:---------:|:-------------------:|
-| Users     | us-east-1_8eFiOt3Is |
+| Users     | us-east-1_44tntWOVE |
 
 | App name   | AppClient ID               |
 | ---------- | -------------------------- |
-| magic_note | 24s1cskeupgk8af9ak5nn71vjj |
+| User | 1mn8agsd9pdgr27t5damb62bhr |
 
 4. **Update website config**
    
