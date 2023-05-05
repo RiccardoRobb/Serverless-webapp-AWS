@@ -50,7 +50,7 @@ You'll deploy pages that enable customers to register as a new user, verify thei
 
 | Pool name | PoolID              |
 |:---------:|:-------------------:|
-| Users     | us-east-1_44tntWOVE |
+| Users     | us-east-1_AcsQ2NJvp |
 
 | App name | AppClient ID               |
 | -------- | -------------------------- |
@@ -63,8 +63,8 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    > ```
    > window._config = {
    >     cognito: {
-   >         userPoolId: 'us-east-1_44tntWOVE',
-   >         userPoolClientId: '1mn8agsd9pdgr27t5damb62bhr',
+   >         userPoolId: 'us-east-1_AcsQ2NJvp',
+   >         userPoolClientId: '3k79leh7v8ouv4ga9l5prtqf1r',
    >         region: 'us-east-1'
    >     },
    >     api: {
