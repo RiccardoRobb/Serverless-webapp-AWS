@@ -60,7 +60,7 @@ You'll deploy pages that enable customers to register as a new user, verify thei
    
    Modify the `/js/config.js` file with the setting from user pool and app you created in the previous steps and *upload the file back to your bucket*.
    
-   > ```
+   > ```javascript
    > window._config = {
    >     cognito: {
    >         userPoolId: 'us-east-1_AcsQ2NJvp',
@@ -109,6 +109,98 @@ Use *AWS Lambda* and *DynamoDB* to build a backend process for handling requests
    
    * default Author from scratch
    
-   * using RequestUnicors as name for *Node.js 16.x*
+   * using [RequestUnicorns](https://webapp.serverlessworkshops.io/serverlessbackend/lambda/requestUnicorn.js) as name for *Node.js 16.x*
+     
+     * **<u>modify the js file!</u>**
    
-   * 
+   * select the existing role
+   
+   * replace the existing code from the *"RequestUnicorns"*
+
+9. **Configure test event**
+   
+   * create a new event
+   
+   * > ```json
+     > {
+     >     "path": "/user",
+     >     "httpMethod": "POST",
+     >     "headers": {
+     >         "Accept": "*/*",
+     >         "Authorization": "eyJraWQiOiJLTzRVMWZs",
+     >         "content-type": "application/json; charset=UTF-8"
+     >     },
+     >     "queryStringParameters": null,
+     >     "pathParameters": null,
+     >     "requestContext": {
+     >         "authorizer": {
+     >             "claims": {
+     >                 "cognito:username": "the_username"
+     >             }
+     >         }
+     >     },
+     >     "body": "{\"PickupLocation\":{\"Latitude\":47.6174755835663,\"Longitude\":-122.28837066650185}}"
+     > }
+     > ```
+
+10. **Check if StatusCode==<u>201</u>**
+
+---
+
+## Deploy a RESTful API
+
+Use *Amazon API Gateway* to expose the Lambda function you built in the previous module.
+
+1. **Create REST API using API Gateway service**
+
+2. **Choose Edge optimized**
+
+3. **Create a new resource**
+   
+   * Set the *resource path* == path described in the *test event* above
+   
+   * Enable the API Gateway CORS
+
+4. **Create a new method**
+   
+   * Set the *method* == httpmethod described in the *test event* above
+   
+   * Select *Lambda function* and select *Use Lambda proxy integration*
+   
+   * Use the created Lambda function
+
+5. **Setup a new authorization**
+   
+   * From *method request* modify the *Authorization* field and select **cognito user pool created** above
+
+6. **Deploy your API using Deployment stage == prod**
+
+7. **Update the** `js/config.js` **file**
+   
+   * setup invokeUrl == `https://idog8vpc82.execute-api.us-east-1.amazonaws.com/prod`
+
+---
+
+---
+
+## TERMINATE TEST TUTORIAL
+
+### Remember to terminate all the resources used and created in this tutorial
+
+- **AWS amplify** - delete app
+
+- **Cognito** - delete pool
+
+- **Lambda function** - delete function and delete pool
+
+- **IAM Role** - delete role
+
+- **DynamoDB Table** - delete table and delete all CloudWatch alarms
+
+- **API Gateway** - delete API
+
+- **CloudWatch Log** - delete log group
+
+---
+
+Author: [Riccardo Ruberto](https://github.com/RiccardoRobb)
