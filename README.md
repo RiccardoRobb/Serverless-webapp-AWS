@@ -1,6 +1,13 @@
 # Serverless web application
 
-Refer to [Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, AWS Amplify, Amazon DynamoDB, and Amazon Cognito](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/?nc1=h_ls)
+Refers to [Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, AWS Amplify, Amazon DynamoDB, and Amazon Cognito](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/?nc1=h_ls)
+
+---
+### *The files shown are used only for the tutorial.* 
+### **I recommend not using these files but creating your own.**
+[These are the files my bro and I used for our test project](https://github.com/Er-Simon/MagicNote)
+
+---
 
 <img src="./images/Architecture.png" title="" alt="Architecture" data-align="center">
 
